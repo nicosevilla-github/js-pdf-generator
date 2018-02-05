@@ -1,6 +1,6 @@
 js-pdf-generator
 
-#Finding
+Finding
 
 - Flexible library for different layouts
 - Relatively easy to layout using declarative json document structure patterns
