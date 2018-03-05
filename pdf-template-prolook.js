@@ -108,7 +108,7 @@ setTimeout(function(){
 }, 1000);
 
 // BLANK HEADER
-var header_info_blank =  {
+var headerInfoBlank =  {
     style: ['fsz_small'],
     table: {
         widths: ['auto','*'],
@@ -142,7 +142,7 @@ var header_info_blank =  {
 }
 
 // BLANK FULL HEADER
-var header_info_full =  {
+var headerInfoFull =  {
     style: ['fsz_small'],
     table: {
         widths: ['auto','*'],
@@ -269,6 +269,8 @@ function documentDefinition(dataUrl) {
         }
     }
 
+
+    //document definition
     var dd = {
 
         // PDF PAGE SETUP
@@ -281,12 +283,12 @@ function documentDefinition(dataUrl) {
 
 
         //HEADER
-        header: function(currenPage) {
-            if (currenPage == 1) {
-                return header_info_full;
+        header: function(currentPage) {
+            if (currentPage == 1) {
+                return headerInfoFull;
             }
             else {
-                return header_info_blank;
+                return headerInfoBlank;
             }
         },
         
@@ -884,7 +886,8 @@ function documentDefinition(dataUrl) {
                     [
                     {
                         border: [true,false,true,true],
-                        text: ''
+                        text: '',
+                        margin: [0,0,0,30]
                     }
                     ]
 
