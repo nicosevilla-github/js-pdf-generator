@@ -592,9 +592,22 @@ function documentDefinition(dataUrl) {
                     	text:""
 	                },
 	                ],
-                	[
-                        {text: 'NOTES', style:['fs_bold','fsz_medium'], colSpan: 4, margin: [0,0,0,30]},'','',''
-                    ]
+        			[
+        			{
+        				colSpan: 4,
+        				style: ['fsz_small'],
+        				margin: [0, 5, 0, 0],
+        				stack: [
+        				{
+            				text: 'NOTES',
+            				style:['fs_bold','fsz_medium'],
+        				},
+        				{
+            				text: 'No notes...',
+        				}
+        				]
+        			},'','',''
+        			]
 
 	                ]
                 },

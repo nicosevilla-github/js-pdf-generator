@@ -877,17 +877,16 @@ function documentDefinition(dataUrl) {
                     body: [
                     [
                     {
-                        border: [true,true,true,false],
-                        style: ['fc_red','fs_bold'],
-                        text: 'NOTES',
-                    }
-                    ],
-
-                    [
-                    {
-                        border: [true,false,true,true],
-                        text: '',
-                        margin: [0,0,0,30]
+                        margin: [0, 0, 0, 5],
+                        stack: [
+                        {
+                            text: 'NOTES',
+                            style:['fs_bold','fsz_medium','fc_red'],
+                        },
+                        {
+                            text: 'No notes...',
+                        }
+                        ]
                     }
                     ]
 

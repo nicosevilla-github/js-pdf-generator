@@ -574,11 +574,21 @@ function documentDefinition(dataUrl) {
 	                         	}
 	                         	],
                     			[
-                    			{text: 'NOTES', style:['fs_bold','fsz_medium'], colSpan: 2, margin: [0,5,0,0]},''
-                    			],
-                    			[
-                    			{text: '', style:['fs_bold','fsz_medium'], colSpan: 2, margin: [0,0,0,20]},''
-                    			],
+                    			{
+                    				colSpan: 2,
+                    				style: ['fsz_small'],
+                    				margin: [0, 5, 0, 0],
+                    				stack: [
+                    				{
+	                    				text: 'NOTES',
+	                    				style:['fs_bold','fsz_medium'],
+                    				},
+                    				{
+	                    				text: 'No notes...',
+                    				}
+                    				]
+                    			},''
+                    			]
 	                         	]
 	                         },
 	                         layout: {
@@ -665,11 +675,21 @@ function documentDefinition(dataUrl) {
 	                         	}
 	                         	],
                     			[
-                    			{text: 'NOTES', style:['fs_bold','fsz_medium'], colSpan: 2, margin: [0,5,0,0]},''
-                    			],
-                    			[
-                    			{text: '', style:['fs_bold','fsz_medium'], colSpan: 2, margin: [0,0,0,20]},''
-                    			],
+                    			{
+                    				colSpan: 2,
+                    				style: ['fsz_small'],
+                    				margin: [0, 5, 0, 0],
+                    				stack: [
+                    				{
+	                    				text: 'NOTES',
+	                    				style:['fs_bold','fsz_medium'],
+                    				},
+                    				{
+	                    				text: 'No notes...',
+                    				}
+                    				]
+                    			},''
+                    			]
 	                         	]
 	                         },
 	                         layout: {
