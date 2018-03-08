@@ -155,12 +155,13 @@ var headerInfoFull =  {
                     	style:'fc_dark',
                     	columns: [
                     	{
-                    		width:'40%',
+                    		width:'35%',
                     		style:['fs_bold','text_align_right'],
                     		text: 'CUSTOMER: ',
                     	},
                     	{
-                    		width:'*',
+                    		width:'60%',
+                    		margin: [2,0,0,0],
                     		text: 'MOUNTAIN CUTFITTERS'
                     	}
                     	]
@@ -195,12 +196,13 @@ var headerInfoFull =  {
                     	style:'fc_dark',
                     	columns: [
                     	{
-                    		width:'40%',
+                    		width:'35%',
                     		style:['fs_bold','text_align_right'],
                     		text: 'DATE: ',
                     	},
                     	{
-                    		width:'*',
+                    		width:'60%',
+                    		margin: [2,0,0,0],
                     		text: '2.24.16',
                     	}
                     	]
@@ -235,12 +237,13 @@ var headerInfoFull =  {
                     	style:'fc_dark',
                     	columns: [
                     	{
-                    		width:'40%',
+                    		width:'35%',
                     		style:['fs_bold','text_align_right'],
                     		text: 'DESIGN NUMBER: ',
                     	},
                     	{
-                    		width:'*',
+                    		width:'60%',
+                    		margin: [2,0,0,0],
                     		text: '4694BCFD'
                     	}
                     	]
