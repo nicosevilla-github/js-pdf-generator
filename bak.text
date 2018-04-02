@@ -1,26 +1,176 @@
-                
-//        header: function(currentPage) {
-//            
-//            
-//            var odr_details = [{
-//                
-//            }];
-//            
-//            if(currentPage==1){
-//                return[
-//                    {
-//                        
-//                    }
-//                ]
-//              }
-//              else if(currentPage==2){
-//                  return null;
-//              };
-//            
-//            
-//            
-//            
-//          }
+// BLANK FULL HEADER
+var header_info_full =  {
+    margin: [20,10],
+    stack: [{
+                text:'title',
+                style:['text_align_center','fc_red','fs_bold','fsz_large']
+            },
+    {
+        style: ['fsz_small'],
+        columns: [
+        {
+            stack:[
+            {
+                image:'logo',
+                width: 150,
+                }
+            ],
+            width: 180,
+        },
+            
+            {
+                columns:[
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'CLIENT NAME:'+' '
+                                },
+                                {
+                                    text: 'John Doe',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'Sport:'+' '
+                                },
+                                {
+                                    text: 'Football 2017',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'Order ID:'+' '
+                                },
+                                {
+                                    text: '2018-ABC',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'RE-ORDER:'+' '
+                                },
+                                {
+                                    text: '',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    },
+    {
+        canvas: [
+        {
+            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray',
+        }
+        ]
+    }
+    ]
+}// BLANK FULL HEADER
+var header_info_full =  {
+    margin: [20,10],
+    stack: [{
+                text:'title',
+                style:['text_align_center','fc_red','fs_bold','fsz_large']
+            },
+    {
+        style: ['fsz_small'],
+        columns: [
+        {
+            stack:[
+            {
+                image:'logo',
+                width: 150,
+                }
+            ],
+            width: 180,
+        },
+            
+            {
+                columns:[
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'CLIENT NAME:'+' '
+                                },
+                                {
+                                    text: 'John Doe',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'Sport:'+' '
+                                },
+                                {
+                                    text: 'Football 2017',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'Order ID:'+' '
+                                },
+                                {
+                                    text: '2018-ABC',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'RE-ORDER:'+' '
+                                },
+                                {
+                                    text: '',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    },
+    {
+        canvas: [
+        {
+            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray',
+        }
+        ]
+    }
+    ]
+}
 
 ==========================================================================
 
@@ -703,3 +853,40 @@ var samp_header_partial =  {
                 return samp_header_partial;
             }
         },
+
+
+        ====================================================
+                                    table: {
+                                widths: ['35%','*'],
+                                body: [
+                                [
+                                    {text: 'CUSTOMER: ', style:['fs_bold','text_align_right','fc_dark']}, 
+                                    {text: 'MOUNTAIN CUTFITTERS',style:'fc_dark'}
+                                ],
+                                [
+                                    {text: 'DATE: ', style:['fs_bold','text_align_right','fc_dark']}, 
+                                    {text: '2.24.16',style:'fc_dark'}
+                                ],
+                                [
+                                    {text: 'DESIGN NUMBER: ', style:['fs_bold','text_align_right','fc_dark']}, 
+                                    {text: '4694BCFD',style:'fc_dark'}
+                                ],
+                                ]
+                            }
+
+                            ====================
+                            ,
+                                {
+                                    table: {
+                                        widths: ['*'],
+                                        body:[
+                                        [{text: 'BROWN'}],
+                                        [{text: 'WHITE'}],
+                                        [{text: 'RED'}],
+                                        [{text: 'BLACK'}]
+                                        ]
+                                    },
+                                    layout: {
+                                        defaultBorder: false
+                                    }
+                                }

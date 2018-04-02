@@ -809,6 +809,84 @@ function documentDefinition(dataUrl) {
 		                }
 		            },
 
+
+					{
+						style:['gap_small_top'],
+		                text:[
+		                {
+		                    text:'SIZING TABLE',
+		                    style: ['fs_bold','fsz_medium']
+		                }
+		                ]
+		            },
+		            {
+		                style: ['fsz_small','gap_small_top','text_align_center'],
+		                table: {
+		                	widths: ['*','*','*'],
+		                	body: [
+                                [
+                                    {
+                                        colSpan: 3,
+										style : 'fsz_medium',
+
+                                        text:[
+                                            {
+                                                text:'SLEEVES: ',
+                                                style: ['fs_bold']
+                                            },
+                                            {
+                                                text:'MOTION CUT'
+                                            }
+                                        ]
+                                    },
+                                    '',
+                                    ''
+                                ],
+                                [
+									{text: 'SIZE', style:['fs_bold']},
+									{text: 'NUMBERS', style:['fs_bold']},
+									{text: 'COUNT', style:['fs_bold']}
+								],
+                                [
+									{text: 'M'},
+									{text: '40'},
+									{text: '1'}
+								],
+                                [
+									{text: 'L'},
+									{text: '41'},
+									{text: '1'}
+								],
+                                [
+									{text: 'M'},
+									{text: '42'},
+									{text: '1'}
+								],
+		                    ]
+		                },
+		                layout: {
+		                    fillColor: function (i, node) {
+		                        return (i % 2 === 1) ? '#e1e1e1' : null;
+		                    },
+		                	hLineWidth: function (i, node) {
+		                    return (i === 0 || i === node.table.body.length) ?.5 : .5;
+		                    },
+		                    vLineWidth: function (i, node) {
+		                        return (i === 0 || i === node.table.widths.length) ? .5 : .5;
+		                    },
+		                    hLineColor: function (i, node) {
+		                        return (i === 0 || i === node.table.body.length) ? '#444' : '#444';
+		                    },
+		                    vLineColor: function (i, node) {
+		                        return (i === 0 || i === node.table.widths.length) ? '#444' : 'black';
+		                    },
+		                    paddingLeft: function(i, node) { return 4; },
+		                    paddingRight: function(i, node) { return 4; },
+		                    paddingTop: function(i, node) { return 3; },
+		                    paddingBottom: function(i, node) { return 3; }
+		                }
+		            },
+
 	 
 					{
 						style:['gap_small_top'],
