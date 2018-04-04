@@ -210,6 +210,7 @@ var headerInfoFull =  {
     ]
 }
 
+// Footer
 function footerInfo (cp) {
 	return {
 		margin: [20,20],

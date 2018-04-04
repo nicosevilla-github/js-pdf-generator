@@ -251,7 +251,75 @@ var headerInfoFull =  {
     }
 }
 
+// Footer
+function footerInfo (cp) {
+    return {
+    style: ['fsz_small','gap_large_top'],
+    table: {
+        widths: ['*','*'],
+        defaultBorder: false,
+        body: [
+        [
+        {
+            border: [false,true,false,false],
+            text: [
+            {
+                text: 'Source:  ',
+                style: ['fs_bold','fc_gray',]
+            },
+            {
+                text: 'Prolook Customizer'
+            }
+            ]
+        },
+        {
+            border: [false,true,false,false],
+            // style: ['fc_gray',],
+            text: ' '
+        }
+        ],
+        [
+        {
+            border: [false,false,false,false],
+            text: [
+            {
+                text: 'Order Code / FOID:  ',
+                style: ['fs_bold','fc_gray']
+            },
+            {
+                text: 'P-M-FBGJ-SP17-10-F09-17'
+            }
+            ]
+        },
+        {
+            border: [false,false,false,false],
+            style: ['text_align_right'],
+            text: [
+            {
+                text: 'Page:  ',
+                style: ['fs_bold','fc_gray']
+            },
+            {
+                text: cp
+            }
+            ]
+        }
+        ]
 
+        ]
+    },
+    layout: {
+        hLineWidth: function(i, node) { return .5; },
+        vLineWidth: function(i, node) { return .5; },
+        hLineColor: function(i, node) { return '#444'; },
+        vLineColor: function(i, node) { return '#444'; },
+
+        paddingLeft: function(i, node) { return 20; },
+        paddingRight: function(i, node) { return 20; },
+        paddingTop: function(i, node) {return (i === node.table.body.length - 1) ? null : 8;}
+    }
+}
+}
 
 
 // documentDefinition function
@@ -291,6 +359,12 @@ function documentDefinition(dataUrl) {
                 return headerInfoBlank;
             }
         },
+
+        footer: function(currentPage, pageCount) {
+            var pagec = currentPage.toString() + ' of ' + pageCount;
+            return footerInfo(pagec);
+        },
+
         
         // CONTENT
         content:[
