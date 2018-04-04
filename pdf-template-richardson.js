@@ -210,8 +210,70 @@ var headerInfoFull =  {
     ]
 }
 
-
-
+function footerInfo (cp) {
+	return {
+		margin: [20,20],
+		stack: [
+		{
+	    	canvas: [
+	    	{
+	    		type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray',
+	    	}
+	    	]
+	    },
+		{
+			style: ['fsz_small','gap_small_top'],
+	        columns:[
+	        {
+	            stack: [
+	                {
+	                    text: [
+	                        {
+	                            text: 'Source:  ',
+	                            style: ['fs_bold','fc_gray']
+	                        },
+	                        {
+	                            text: 'Richardson Customizer'
+	                        }
+	                    ]
+	                },
+	                {
+	                    text: [
+	                        {
+	                            text: 'Order Code / FOID:  ',
+	                            style: ['fs_bold','fc_gray']
+	                        },
+	                        {
+	                            text: 'f13bc8ae8190'
+	                        }
+	                    ]
+	                }
+	            ]
+	        },
+	        {
+	        	style: ['text_align_right'],
+	            stack: [
+	                {
+	                    text: ' '
+	                },
+	                {
+	                    text: [
+	                        {
+	                            text: 'Page:  ',
+	                            style: ['fs_bold','fc_gray']
+	                        },
+	                        {
+	                            text: cp
+	                        }
+	                    ]
+	                }
+	            ]
+	        }
+	        ]
+		}
+	    ]
+	}
+}
 
 
 // documentDefinition function
@@ -251,8 +313,12 @@ function documentDefinition(dataUrl) {
                 return headerInfoBlank;
             }
         },
-            
-		
+
+        footer: function(currentPage, pageCount) {
+        	var pagec = currentPage.toString() + ' of ' + pageCount;
+        	return footerInfo(pagec);
+        },
+
 		content: [
 			
 			{
