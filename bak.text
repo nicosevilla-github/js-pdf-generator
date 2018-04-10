@@ -1,0 +1,892 @@
+// BLANK FULL HEADER
+var header_info_full =  {
+    margin: [20,10],
+    stack: [{
+                text:'title',
+                style:['text_align_center','fc_red','fs_bold','fsz_large']
+            },
+    {
+        style: ['fsz_small'],
+        columns: [
+        {
+            stack:[
+            {
+                image:'logo',
+                width: 150,
+                }
+            ],
+            width: 180,
+        },
+            
+            {
+                columns:[
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'CLIENT NAME:'+' '
+                                },
+                                {
+                                    text: 'John Doe',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'Sport:'+' '
+                                },
+                                {
+                                    text: 'Football 2017',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'Order ID:'+' '
+                                },
+                                {
+                                    text: '2018-ABC',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'RE-ORDER:'+' '
+                                },
+                                {
+                                    text: '',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    },
+    {
+        canvas: [
+        {
+            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray',
+        }
+        ]
+    }
+    ]
+}// BLANK FULL HEADER
+var header_info_full =  {
+    margin: [20,10],
+    stack: [{
+                text:'title',
+                style:['text_align_center','fc_red','fs_bold','fsz_large']
+            },
+    {
+        style: ['fsz_small'],
+        columns: [
+        {
+            stack:[
+            {
+                image:'logo',
+                width: 150,
+                }
+            ],
+            width: 180,
+        },
+            
+            {
+                columns:[
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'CLIENT NAME:'+' '
+                                },
+                                {
+                                    text: 'John Doe',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'Sport:'+' '
+                                },
+                                {
+                                    text: 'Football 2017',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    stack: [
+                        {
+                            text: [
+                                {
+                                    text: 'Order ID:'+' '
+                                },
+                                {
+                                    text: '2018-ABC',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        },
+                        {
+                            text: [
+                                {
+                                    text: 'RE-ORDER:'+' '
+                                },
+                                {
+                                    text: '',
+                                    style: ['fs_bold','fc_gray']
+                                }
+                            ]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    },
+    {
+        canvas: [
+        {
+            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray',
+        }
+        ]
+    }
+    ]
+}
+
+==========================================================================
+
+
+        header: {
+            stack:[
+                {
+                    style: ['fsz_small'],
+                    columns: [
+                        {
+                            stack: [
+                                {
+                                    image:'logo',
+                                    width: 70
+                                }
+                            ]
+
+                        },
+                        {
+                            width:'20%',
+                            stack: [
+                                {
+                                    text: [
+                                        {
+                                            text: 'CLIENT NAME:'+' '
+                                        },
+                                        {
+                                            text: 'John Doe'
+                                        }
+                                    ]
+                                },
+                                {
+                                    text: [
+                                        {
+                                            text: 'Sport:'+' '
+                                        },
+                                        {
+                                            text: 'Football 2017'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            width:'20%',
+                            stack: [
+                                {
+                                    text: [
+                                        {
+                                            text: 'Date:'+' '
+                                        },
+                                        {
+                                            text: '00-00-00'
+                                        }
+                                    ]
+                                },
+                                {
+                                    text: [
+                                        {
+                                            text: 'Order Number:'+' '
+                                        },
+                                        {
+                                            text: '46948FCD'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    canvas: [
+                        {
+                            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray', 
+                        }
+                    ],
+                    style:['gap_small_top','text_align_center']
+                }
+            ],
+            margin: 20
+        },
+        
+        content:[
+            {
+                style:['gap_medium_top'],
+                columns: [
+                    {
+                        stack:[
+                            {
+                                    text:[
+                                        {
+                                            text:'ILLINI SUBLIMATED 17 JERSEY'+'\n',
+                                            style: ['fc_red','fs_bold','fs_italic']
+                                        },
+                                        {
+                                            text:'SUBLIMATED'
+                                        }
+                                    ],
+                                    style:['fsz_medium']
+                                },
+                                {
+                                    text:[
+                                        {
+                                            text:'URLS:'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text:'BUILDER URL',
+                                            link: link,
+                                            style: ['fc_blue','fs_underline','fsz_small']
+                                        },
+                                        {
+                                            text: '   |   '
+                                        },
+                                        {
+                                            text:'PDF URL',
+                                            link: link,
+                                            style: ['fc_blue','fs_underline','fsz_small']
+                                        },
+                                        {
+                                            text: '   |   '
+                                        },
+                                        {
+                                            text:'PDF URL',
+                                            link: link,
+                                            style: ['fc_blue','fs_underline','fsz_small']
+                                        },
+                                        {
+                                            text: '   |   '
+                                        },
+                                        {
+                                            text:'CUT URL',
+                                            link: link,
+                                            style: ['fc_blue','fs_underline','fsz_small']
+                                        },
+                                        {
+                                            text: '   |   '
+                                        },
+                                        {
+                                            text:'STYLE PDF URL',
+                                            link: link,
+                                            style: ['fc_blue','fs_underline','fsz_small']
+                                        }
+                                    ],
+                                    style:['gap_medium_top']
+                                },
+                                {
+                                    text:[
+                                        {
+                                            text:'PART DETAILS',
+                                            style: ['fc_red','fs_bold','fsz_medium']
+                                        }
+                                    ],
+                                    style:['gap_large_top']
+                                },
+                                {
+                                    text:[
+                                        {
+                                            text: 'FRONT BODY:'+' ',
+                                            style: ['fsz_small'],
+                                            margin: [ 5, 2, 10, 20 ]
+                                        },
+                                        {
+                                            text: 'RED (R)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'BACK BODY:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'RED (R)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'NECK TRIM:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'RED (R)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'SLEEVES:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'RED (R)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'ARM TRIM:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'BLACK (B)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'SHOULDER INSERT 1:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'GOLD (G)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'SHOULDER INSERT 2:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'RED (D)'+'\n',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'SHOULDER INSERT 3:'+' ',
+                                            style: ['fsz_small']
+                                        },
+                                        {
+                                            text: 'BLACK (B)'+'\n',
+                                            style: ['fsz_small']
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            columns: [
+                                {
+                                    stack:[
+                                        {
+                                            stack:[
+                                                {
+                                                    image: dataUrls.front_thumbnail,
+                                                    width: 180,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                },
+                                                {
+                                                    text:'FRONT',
+                                                    link: link,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            stack:[
+                                                {
+                                                    image: dataUrls.left_thumbnail,
+                                                    width: 180,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                },
+                                                {
+                                                    text:'LEFT',
+                                                    link: link,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                }
+                                            ],
+                                            style:['gap_medium_top']
+                                        }
+                                    ]
+                                },
+                                {
+                                    stack:[
+                                        {
+                                            stack:[
+                                                {
+                                                    image: dataUrls.back_thumbnail,
+                                                    width: 180,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                },
+                                                {
+                                                    text:'BACK',
+                                                    link: link,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            stack:[
+                                                {
+                                                    image: dataUrls.right_thumbnail,
+                                                    width: 180,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                },
+                                                {
+                                                    text:'RIGHT',
+                                                    link: link,
+                                                    style: ['fc_blue','fs_underline','fsz_small','text_align_center']
+                                                }
+                                            ],
+                                            style:['gap_medium_top']
+                                        }
+                                    ]
+                                }
+                            ]
+                        }                        
+                    ]
+                },
+            
+            
+            {
+                pageBreak: 'before',
+                style:['gap_medium_top'],
+                table: {
+                    widths: ['*', '*', '*', '*'],
+                    pageBreak: 'before',
+                    body: [
+                        [
+                            {
+                                text: 'Title'
+                         },
+                            {
+                                text: 'Title'
+                         },
+                            {
+                                text: 'Title'
+                         },
+                            {
+                                text: 'Title'
+                         }
+                        ],
+                        [
+                            {
+                                text: ''
+                            },
+                            {
+                                text: '#3 Player Name:',
+                                style:['fsz_small','fc_gray']
+                            },
+                            {
+                                text: ''
+                            },
+                            {
+                                style:['fsz_small'],
+                                stack: [
+                                    {
+                                        columns: [
+                                            {
+                                                text:'#6 Sleeve Numbers:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'85',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Colors:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'W,G,B',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Patern:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'N/A',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Front:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'Brewer',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Side:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'10"',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            {
+                                style:['fsz_small'],
+                                stack: [
+                                    {
+                                        columns: [
+                                            {
+                                                text:'#2 Sleeve Numbers:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'85',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Colors:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'W,G,B',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Patern:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'N/A',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Front:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'Brewer',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        columns: [
+                                            {
+                                                text:'Side:',
+                                                style:['fc_gray']
+                                            },
+                                            {
+                                                text:'8"',
+                                                style:['fc_dark']
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                text: ''
+                            },
+                            {
+                                text: ''
+                            },
+                            {
+                                text: ''
+                            }
+                        ]
+                    ]
+                }
+            }
+        ],
+        
+        
+        
+        ========================================================
+        
+        
+        {
+            stack:[
+                {
+                    style: ['fsz_small'],
+                    columns: [
+                        {
+                            stack: [
+                                {
+                                    image:'logo',
+                                    width: 70
+                                }
+                            ]
+
+                        },
+                        {
+                            width:'20%',
+                            stack: [
+                                {
+                                    text: [
+                                        {
+                                            text: 'CLIENT NAME:'+' '
+                                        },
+                                        {
+                                            text: 'John Doe'
+                                        }
+                                    ]
+                                },
+                                {
+                                    text: [
+                                        {
+                                            text: 'Sport:'+' '
+                                        },
+                                        {
+                                            text: 'Football 2017'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            width:'20%',
+                            stack: [
+                                {
+                                    text: [
+                                        {
+                                            text: 'Date:'+' '
+                                        },
+                                        {
+                                            text: '00-00-00'
+                                        }
+                                    ]
+                                },
+                                {
+                                    text: [
+                                        {
+                                            text: 'Order Number:'+' '
+                                        },
+                                        {
+                                            text: '46948FCD'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    canvas: [
+                        {
+                            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray', 
+                        }
+                    ],
+                    style:['gap_small_top','text_align_center']
+                }
+            ],
+            margin: 20
+        },
+        
+        
+        ========================================================
+        ========================================================
+        ========================================================
+        
+        
+var samp_header_full =  {
+            stack:[
+                {
+                    style: ['fsz_small'],
+                    columns: [
+                        {
+                            stack: [
+                                {
+                                    image:'logo',
+                                    width: 70
+                                }
+                            ]
+
+                        },
+                        {
+                            width:'20%',
+                            stack: [
+                                {
+                                    text: [
+                                        {
+                                            text: 'CLIENT NAME:'+' '
+                                        },
+                                        {
+                                            text: 'John Doe'
+                                        }
+                                    ]
+                                },
+                                {
+                                    text: [
+                                        {
+                                            text: 'Sport:'+' '
+                                        },
+                                        {
+                                            text: 'Football 2017'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            width:'20%',
+                            stack: [
+                                {
+                                    text: [
+                                        {
+                                            text: 'Date:'+' '
+                                        },
+                                        {
+                                            text: '00-00-00'
+                                        }
+                                    ]
+                                },
+                                {
+                                    text: [
+                                        {
+                                            text: 'Order Number:'+' '
+                                        },
+                                        {
+                                            text: '46948FCD'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    canvas: [
+                        {
+                            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray', 
+                        }
+                    ],
+                    style:['gap_small_top','text_align_center']
+                }
+            ],
+            margin: 20
+        }
+var samp_header_partial =  {
+            stack:[
+                {
+//                    style: ['fsz_small'],
+//                    columns: [
+//                        {
+                            stack: [
+                                {
+                                    image:'logo',
+                                    width: 70
+                                }
+                            ]
+//
+//                        }
+//                    ]
+                },
+                {
+                    canvas: [
+                        {
+                            type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray', 
+                        }
+                    ],
+                    style:['gap_small_top','text_align_center']
+                }
+            ],
+            margin: 20
+        }
+        
+        
+        header: function(currenPage) {
+            if (currenPage == 1) {
+                return samp_header_full;
+            }
+            else {
+                return samp_header_partial;
+            }
+        },
+
+
+        ====================================================
+                                    table: {
+                                widths: ['35%','*'],
+                                body: [
+                                [
+                                    {text: 'CUSTOMER: ', style:['fs_bold','text_align_right','fc_dark']}, 
+                                    {text: 'MOUNTAIN CUTFITTERS',style:'fc_dark'}
+                                ],
+                                [
+                                    {text: 'DATE: ', style:['fs_bold','text_align_right','fc_dark']}, 
+                                    {text: '2.24.16',style:'fc_dark'}
+                                ],
+                                [
+                                    {text: 'DESIGN NUMBER: ', style:['fs_bold','text_align_right','fc_dark']}, 
+                                    {text: '4694BCFD',style:'fc_dark'}
+                                ],
+                                ]
+                            }
+
+                            ====================
+                            ,
+                                {
+                                    table: {
+                                        widths: ['*'],
+                                        body:[
+                                        [{text: 'BROWN'}],
+                                        [{text: 'WHITE'}],
+                                        [{text: 'RED'}],
+                                        [{text: 'BLACK'}]
+                                        ]
+                                    },
+                                    layout: {
+                                        defaultBorder: false
+                                    }
+                                }

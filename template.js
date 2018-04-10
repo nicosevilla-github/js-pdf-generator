@@ -255,7 +255,7 @@ function documentDefinition(dataUrl) {
 					]
 				]
 			},
-			{canvas: [{ type: 'line', x1: 0, y1: 5, x2: 1095-2*40, y2: 5, lineWidth: 1, lineColor: 'gray', }], margin: [0, 5, 0, 0],},
+			{canvas: [{ type: 'line', x1: 0, y1: 5, x2: 832-2*40, y2: 5, lineWidth: 1, lineColor: 'gray', }], margin: [0, 5, 0, 0],},
 			{
 				text: [
 					{
